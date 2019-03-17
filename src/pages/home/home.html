@@ -1,14 +1,33 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+        <ion-icon name="logo-octocat"></ion-icon> MungMingShop
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="showhead">
+    <img src="assets/imgs/logo.jpg" alt="">
+    <p>Welcom to MungMingShop</p>
+  </div>
+
+  <ion-list>
+    <ion-item (click)="gotoAbout()"> <!--สร้างอีเว้น คลิก ที่ icon About Us ให้ไปที่หน้า About-->
+      <ion-icon name="contact"></ion-icon> About Us
+    </ion-item>
+
+    <ion-item (click)="gotoCommunity()"> <!--สร้างอีเว้น คลิก ที่ icon Community ให้ไปที่หน้า Community-->
+        <ion-icon name="people"></ion-icon> Community
+      </ion-item>
+
+      <ion-item (click)="gotoGallery()"> <!--สร้างอีเว้น คลิก ที่ icon Gallersdy ให้ไปที่หน้า Gallersdy-->
+          <ion-icon name="image"></ion-icon> Gallery
+        </ion-item>
+
+        <ion-item (click)="gotoSlides()"> <!--สร้างอีเว้น คลิก ที่ icon Slides ให้ไปที่หน้า Slides-->
+          <ion-icon name="image"></ion-icon> Slides
+        </ion-item>
+  </ion-list>
+  
 </ion-content>
